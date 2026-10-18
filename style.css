@@ -1,0 +1,26 @@
+html,body{margin:0;height:100%;background:#05040d;overflow:hidden;font-family:monospace;color:#fff;touch-action:none;user-select:none;-webkit-user-select:none}
+#app{display:flex;flex-direction:column;height:100%;align-items:center;justify-content:center;position:relative}
+
+/* Canvas e Responsividade */
+canvas{image-rendering:pixelated;background:#000;display:block;border-radius:4px;box-shadow:0 0 24px rgba(154,138,255,0.15)}
+
+/* Tela Modal de Nome */
+#nameScreen,#helpScreen{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(4,3,12,0.92);z-index:20;font-family:monospace}
+.cardModal{width:min(350px,90vw);box-sizing:border-box;padding:22px 20px;background:linear-gradient(180deg,#221a44,#120e29);border:2px solid #9a8aff;box-shadow:0 0 30px rgba(154,138,255,0.3), inset 0 0 15px rgba(255,226,138,0.05);text-align:center;border-radius:10px}
+.modalTitle{color:#ffe28a;font-weight:bold;font-size:16px;margin-bottom:12px;text-shadow:0 2px 4px rgba(0,0,0,0.8)}
+.modalText{color:#d8d2f5;font-size:11px;line-height:1.6;margin-bottom:14px;text-align:left}
+#nameInput{width:100%;box-sizing:border-box;padding:11px 10px;background:#090718;border:2px solid #6f62b5;color:#fff;outline:none;font:12px monospace;border-radius:6px;text-align:center;user-select:text;-webkit-user-select:text;touch-action:text;pointer-events:auto}
+#nameInput:focus{border-color:#ffe28a;box-shadow:0 0 12px rgba(255,226,138,0.25)}
+.btnPrimary{width:100%;margin-top:12px;padding:11px 8px;background:linear-gradient(180deg,#6b58c2,#3a2d78);border:2px solid #b5aaff;color:#fff;border-radius:6px;font:bold 11px monospace;cursor:pointer;transition:transform 0.1s}
+.btnPrimary:active{transform:scale(0.98)}
+#nameError{min-height:13px;margin-top:8px;color:#ff9a9a;font-size:10px}
+
+/* Controles virtuais touch */
+#pad{display:none;width:100%;max-width:640px;justify-content:space-between;align-items:center;padding:6px 16px;box-sizing:border-box;z-index:10}
+.t #pad{display:flex}
+#dp{display:grid;grid-template-columns:repeat(3,50px);grid-template-rows:repeat(3,50px);gap:3px}
+#pad button{background:linear-gradient(#332a62,#211b45);border:2px solid #9588ff;box-shadow:0 4px 0 #110e24;color:#fff;border-radius:12px;font:bold 18px monospace;touch-action:none}
+#pad button:active{background:#5a4ab8}
+#ab{display:flex;gap:8px;align-items:center}
+#ab button{width:54px;height:54px;border-radius:50%}
+#ab #mn{width:40px;height:40px}

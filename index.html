@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Dentro da Mente - Frases Motivacionais</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="c"></canvas>
+  
+  <!-- Modal Nome -->
+  <div id="nameScreen">
+    <div class="cardModal">
+      <div class="modalTitle">✦ REGISTRO DE PENSAMENTO ✦</div>
+      <div class="modalText" style="text-align:center;">Como você deseja ser chamado durante esta jornada?</div>
+      <input id="nameInput" maxlength="16" autocomplete="off" placeholder="Digite seu nome...">
+      <button id="startBtn" class="btnPrimary">COMEÇAR AVENTURA</button>
+      <div id="nameError"></div>
+    </div>
+  </div>
+
+  <!-- Modal Como Jogar -->
+  <div id="helpScreen">
+    <div class="cardModal">
+      <div class="modalTitle">❓ COMO JOGAR</div>
+      <div class="modalText">
+        <b>• Movimento:</b> Teclas [WASD] ou [Setas]<br>
+        <b>• Interagir / Atacar:</b> Pressione [E] ou clique no botão 'E'<br>
+        <b>• Esquivar (Dash):</b> Pressione [Espaço]<br>
+        <b>• Frases Motivacionais:</b> Ao atacar no campo aberto, você lança pensamentos positivos que vencem medos e dúvidas.<br>
+        <b>• Menu de Pausa:</b> Pressione [ESC] ou toque no botão [☰].
+      </div>
+      <button id="closeHelpBtn" class="btnPrimary">ENTENDIDO</button>
+    </div>
+  </div>
+
+  <!-- Touch D-Pad -->
+  <div id="pad">
+    <div id="dp">
+      <span></span><button data-k="u">▲</button><span></span>
+      <button data-k="l">◀</button><span></span><button data-k="r">▶</button>
+      <span></span><button data-k="d">▼</button><span></span>
+    </div>
+    <div id="ab">
+      <button id="mn">☰</button>
+      <button id="ed">ESP</button>
+      <button id="ea">E</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
